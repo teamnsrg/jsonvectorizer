@@ -2,8 +2,11 @@
 JSON Vectorizer
 ===============
 
+.. image:: https://readthedocs.org/projects/jsonvectorizer/badge/?version=latest
+    :target: http://jsonvectorizer.readthedocs.io
+
 .. image:: https://img.shields.io/badge/License-MIT-blue.svg
-   :target: ./LICENSE
+    :target: ./LICENSE
 
 .. sphinx-start
 

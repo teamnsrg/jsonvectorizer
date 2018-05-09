@@ -1,5 +1,6 @@
 Cython
 numpy
+numpydoc
 py-lz4framed
 python-dateutil
 pytz
