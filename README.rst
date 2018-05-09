@@ -154,12 +154,12 @@ disk, and later be loaded in a separate session:
     import pickle
 
     # Saving
-    with open('vectorizer.pkl', 'wb'):
+    with open('vectorizer.pkl', 'wb') as f:
         pickle.dump(vectorizer, f)
 
     # Loading
-    with open('vectorizer.pkl', 'rb'):
-        vectorizer = pickle.load(vectorizer)
+    with open('vectorizer.pkl', 'rb') as f:
+        vectorizer = pickle.load(f)
 
 To-Do
 =====
