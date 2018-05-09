@@ -1,0 +1,7 @@
+Cython
+numpy
+py-lz4framed
+python-dateutil
+pytz
+scikit-learn
+scipy
