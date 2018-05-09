@@ -1,10 +1,5 @@
 # Documentation build configuration file
 
-import os
-import sys
-
-sys.path.insert(0, os.path.abspath('../'))
-
 # -----------------------------------------------------------------------------
 # General configuration
 # -----------------------------------------------------------------------------
@@ -12,7 +7,6 @@ sys.path.insert(0, os.path.abspath('../'))
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
-    #'sphinx.ext.linkcode',
     'numpydoc'
 ]
 
