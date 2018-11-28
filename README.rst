@@ -88,8 +88,7 @@ per line):
     
     # Learn the schema of sample documents
     vectorizer = JsonVectorizer()
-    for doc in docs:
-        vectorizer.extend(doc)
+    vectorizer.extend(doc)
 
 We then prune fields that are present for less than 1% of all observed samples,
 and also those starting with an underscore:
