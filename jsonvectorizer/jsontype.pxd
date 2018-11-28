@@ -1,5 +1,5 @@
 # Supported types for JSON documents
-cdef enum JsonType: OBJECT, ARRAY, JNULL, BOOLEAN, INTEGER, NUMBER, STRING
+cdef enum JsonType: OBJECT, ARRAY, JNULL, BOOLEAN, INTEGER, NUMBER, STRING, TIMESTAMP
 
 cdef JsonType typeof(object doc) except? JNULL
 
