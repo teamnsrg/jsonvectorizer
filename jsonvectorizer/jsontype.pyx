@@ -1,5 +1,5 @@
+import datetime
 import sys
-import dateutil.parser
 
 
 # Python version (for handling unicode strings)
@@ -23,9 +23,9 @@ cdef JsonType typeof(object doc) except? JNULL:
 		return NUMBER
 	elif json_type is str:
 		try:
-			timestamp = dateutil.parser.parse(doc) 
+			datetime.datetime.strptime(doc, "%Y-%m-%dT%H:%M:%SZ")
 			return TIMESTAMP
-		except ValueError:
+		except (ValueError,TypeError):
 			return STRING
 	elif VERSION == 2 and json_type is unicode:
 		return STRING
